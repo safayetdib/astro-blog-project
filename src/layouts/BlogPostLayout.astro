@@ -1,20 +1,26 @@
 ---
 // component imports
+import { AstroComponent } from 'astro/dist/runtime/server/render/astro';
 import MainLayout from '../layouts/MainLayout.astro';
+import PostHeader from '../components/PostHeader.astro';
 
 const { frontmatter } = Astro.props;
 console.log(frontmatter);
+
+const { title, description, date, category, author, image } = frontmatter;
 ---
 
-<MainLayout title="My Blogs">
-	<header>
-		<div class="container"></div>
-
-		<img
-			src=""
-			alt=""
-		/>
-	</header>
+<MainLayout
+	title={title}
+	description={description}>
+	<PostHeader
+		{title}
+		{description}
+		{date}
+		{category}
+		{author}
+		{image}
+	/>
 
 	<div class="post-content">
 		<div class="content">
