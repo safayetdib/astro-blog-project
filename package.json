@@ -1,15 +1,21 @@
 {
-  "name": "astro-blog-project",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^2.10.11"
-  }
+	"name": "astro-blog-project",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"browserslist": [
+		"defaults"
+	],
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"astro": "^2.10.11",
+		"postcss": "^8.4.28",
+		"postcss-preset-env": "^9.1.1"
+	}
 }

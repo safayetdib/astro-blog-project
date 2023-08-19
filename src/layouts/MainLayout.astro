@@ -1,0 +1,19 @@
+---
+// component imports
+import MainHead from '../layouts/MainHead.astro';
+
+// style imports
+import '../styles/global.css';
+
+const { title = 'Home', description = 'Home page' } = Astro.props;
+---
+
+<html lang="en">
+	<MainHead
+		title={title}
+		description={description}
+	/>
+	<body>
+		<slot>Default Text</slot>
+	</body>
+</html>
