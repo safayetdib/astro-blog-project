@@ -1,0 +1,26 @@
+---
+// component imports
+import MainLayout from '../layouts/MainLayout.astro';
+
+const { frontmatter } = Astro.props;
+console.log(frontmatter);
+---
+
+<MainLayout title="My Blogs">
+	<header>
+		<div class="container"></div>
+
+		<img
+			src=""
+			alt=""
+		/>
+	</header>
+
+	<div class="post-content">
+		<div class="content">
+			<slot />
+		</div>
+
+		<div class="sidebar"></div>
+	</div>
+</MainLayout>
